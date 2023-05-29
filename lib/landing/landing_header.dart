@@ -103,7 +103,7 @@ class LandingHeader extends StatelessWidget {
               // Personal logo
               ClipOval(
                 child: FadeInImage.assetNetwork(
-                  image: 'https://porelarte.tech/kamranbekirovcom/personal-logo.png',
+                  image: 'https://media.licdn.com/dms/image/D4D03AQFFs2pIEvJ2ew/profile-displayphoto-shrink_400_400/0/1685331134641?e=1691020800&v=beta&t=QrzmCH4CI8aiEK45ailxb5lNqxm7ip503qFd_gUhXU4',
                   placeholder: 'assets/images/transparent.png',
                   height: logoSize,
                   width: logoSize,

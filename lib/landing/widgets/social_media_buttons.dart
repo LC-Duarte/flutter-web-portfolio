@@ -36,19 +36,10 @@ class SocialMediaButtons extends StatelessWidget {
           ),
           SocialMediaButton(
             index: 3,
-            url: AppConstants.twitterURL,
-            iconData: FontAwesomeIcons.twitter,
+            url: AppConstants.boldURL,
+            iconData: FontAwesomeIcons.link,
           ),
-          SocialMediaButton(
-            index: 4,
-            url: AppConstants.facebookProfileURL,
-            iconData: FontAwesomeIcons.facebook,
-          ),
-          SocialMediaButton(
-            index: 5,
-            url: AppConstants.instagramProfileURL,
-            iconData: FontAwesomeIcons.instagram,
-          ),
+         
         ],
       ),
     );
