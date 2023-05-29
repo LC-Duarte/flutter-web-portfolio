@@ -105,7 +105,8 @@ class _ScrollUpIndicatorState extends State<ScrollUpIndicator> {
         children: const [
           SizedBox(width: 24.0),
           Text(
-            'BUILT\nWITH',
+            '',
+           // 'BUILT\nWITH',
             style: TextStyle(
               color: Colors.white,
               fontSize: 10.0,
@@ -113,7 +114,7 @@ class _ScrollUpIndicatorState extends State<ScrollUpIndicator> {
             ),
           ),
           SizedBox(width: 4.0),
-          FlutterLogo(size: 36.0),
+          //FlutterLogo(size: 36.0),
           SizedBox(width: 24.0),
         ],
       ),

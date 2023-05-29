@@ -10,7 +10,7 @@ abstract class AppConstants {
   static const webSiteURL = 'Leonardo Duarte';
   static const gitHubProfileURL = 'https://github.com/LC-Duarte';
   static const linkedInProfileURL = 'https://www.linkedin.com/in/leonardo-duarte-cwb/';
-  static const boldURL = '';
+  static const boldURL = 'https://bold.pro/my/leonardo-duarte-cwb';
   static const instagramProfileURL = '';
   static const facebookProfileURL = '';
   static const eMail = 'mailto:leonardochavesduarte@gmail.com';
