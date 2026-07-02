@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:app/utilities/app_constants.dart';
 import 'package:app/landing/landing_screen.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class App extends StatelessWidget {
-  const App({super.key});
+  App({super.key});
+  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,20 @@ class App extends StatelessWidget {
           background: Container(color: primaryColor),
         );
       },
-      home: const LandingScreen(),
+      home: FutureBuilder(
+        future: _initialization,
+        builder: (context, snapshot){
+          if(snapshot.hasError){
+            print("Error");
+            
+          }
+          if(snapshot.connectionState == ConnectionState.done){
+            return LandingScreen();
+          }
+          return CircularProgressIndicator();
+        }
+      ),
+      
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: 'Ubuntu',

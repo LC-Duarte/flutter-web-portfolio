@@ -15,6 +15,9 @@ dependencies:
     sdk: flutter
   font_awesome_flutter: ^10.2.1
   responsive_framework: ^0.2.0
+  firebase_core: ^2.13.0
+  
+  
 
 dev_dependencies:
   flutter_test:
